@@ -6,7 +6,7 @@
 * Perform ROP
 
 #### Getting to know the binary
-If we open the binary in IDA we see a pretty simple main function ![IDA image](/assets/IDA_function.png)
+If we open the binary in IDA we see a pretty simple main function ![IDA image](/pwn/koncha/assets/IDA_function.png)
 
 `gets()` is clearly the vulnerability here, so considering that the challenge binary has no canary we can easily perform ROP.
 
@@ -14,7 +14,7 @@ If we open the binary in IDA we see a pretty simple main function ![IDA image](/
 
 * Get LIBC leak
     
-    When i first launched the binary I noticed one interesting feature: if I don't provide any input and just press ENTER, the output of my name will contain strange bytes.![Leak_pic](/assets/nc_output.png) Looking into it, I figured that those bytes, when converted to int, are actually an adress from `LIBC`. Sweet! Now we don't have to worry about ASLR anymore.
+    When i first launched the binary I noticed one interesting feature: if I don't provide any input and just press ENTER, the output of my name will contain strange bytes.![Leak_pic](/pwn/koncha/assets/nc_output.png) Looking into it, I figured that those bytes, when converted to int, are actually an adress from `LIBC`. Sweet! Now we don't have to worry about ASLR anymore.
     
 
 * Get code execution
