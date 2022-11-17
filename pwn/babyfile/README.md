@@ -10,7 +10,7 @@
 
 ### Task overview
 This task was presented by **shift-crops** and is a pretty classic FSOP-based CTF task.
-Checksec show us that this binary is loaded with all kinds of mitigations.![Checksec output](/pwn/babyfile/assets/checksec.png)
+Checksec show us that this binary is loaded with all kinds of mitigations.![Checksec output](./assets/checksec.png)
 We are given the source code, so without further ado let's dive into
 ```c
 #include <stdio.h>
