@@ -45,7 +45,7 @@ unsigned int hash(unsigned int input)
 
 int check(unsigned int ret_val)
 {
-	unsigned int statistic[9] = {0x739e80a2,0x3aae80a3,0x3ba4e79f,0x78bac1f3,0x5ef9c1f3,0x3bb9ec9f,0x558683f4,0x55fad594,0x6cbfdd9f};
+	unsigned int keys[9] = {0x739e80a2,0x3aae80a3,0x3ba4e79f,0x78bac1f3,0x5ef9c1f3,0x3bb9ec9f,0x558683f4,0x55fad594,0x6cbfdd9f};
 	for(int i=0;i < 9; i++)
 		if(keys[i] == ret_val)
 			return i;
