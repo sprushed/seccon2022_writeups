@@ -69,8 +69,8 @@ int main()
 					int is_alive = check(MATb_ABTOPA);
 					if( is_alive != -1)
 						cout << s <<" "<< brute[0] << brute[1] << brute[2] << brute[3] << endl;
-					#else 
-					#	cout << "😢"; //Kakoi zhe krutoi task na llvm vsei komande zashlo 🙂👍🙂👍
+					//else 
+					//	cout << "😢"; //Kakoi zhe krutoi task na llvm vsei komande zashlo 🙂👍🙂👍
 				}	
 	return 0;
   }
