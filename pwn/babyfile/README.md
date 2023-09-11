@@ -3,10 +3,10 @@
 
 
 ### TL; DR 
-* Initialize structure with `_IO_str_overflow`
-* Leak libc with `_IO_new_file_sync`
-* Leak canary 
-* Perform House_of_Emma attack
+* Initialize structure with `_IO_str_overflow`.
+* Leak libc with `_IO_new_file_sync`.
+* Leak canary.
+* Perform House_of_Emma attack.
 
 ### Task overview
 This task was presented by **shift-crops** and is a pretty classic FSOP-based CTF task.
